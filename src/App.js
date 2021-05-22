@@ -60,9 +60,9 @@ export default class App extends React.Component {
       console.log("results");
       axios  
         .get( 
-           "https://cors-anywhere.herokuapp.com/http://fyleapis.herokuapp.com/api/branches/?q="+
+           "https://corsanywhere.herokuapp.com/http://fyleapis.herokuapp.com/api/branches/?q="+
            dropDownValue.value+
-           "&limit=800&offset=0" 
+           "&limit=400&offset=0" 
         )
         .then(res => {
           
@@ -92,8 +92,7 @@ export default class App extends React.Component {
       onSelect: onRowSelect,
       onSelectAll: onSelectAll,
       selected: JSON.parse(sessionStorage.getItem(key)),
-      bgColor: "#FF9933",
-      fontWeight: 'bold'
+      bgColor: "#FF9933"
     };
 
     const table = (
@@ -187,7 +186,7 @@ export default class App extends React.Component {
       </div>
 <br/><br/><br/><br/>
       <div style={{ paddingTop:"10px", paddingBottom:"5px", backgroundColor: "black"}}>
-      <a href={"https://github.com/AJAYKR00KJ"}><h1 style={{ fontSize:"12px", textAlign: "center", color: "white"}}> &copy; ajaykr | 2021</h1></a>
+      <a href={"https://github.com/AJAYKR00KJ"}><h1 style={{ fontSize:"12px", textAlign: "center", color: "white"}}> &copy; ajay | 2021-22</h1></a>
         </div>
 </div>
       

@@ -187,7 +187,7 @@ export default class App extends React.Component {
       </div>
 <br/><br/><br/><br/>
       <div style={{ paddingTop:"10px", paddingBottom:"5px", backgroundColor: "black"}}>
-      <a href={"https://github.com/AJAYKR00KJ"}><h1 style={{ fontSize:"12px", textAlign: "center", color: "white"}}> &copy;@jaykr | 2021</h1></a>
+      <a href={"https://github.com/AJAYKR00KJ"}><h1 style={{ fontSize:"12px", textAlign: "center", color: "white"}}> &copy; ajaykr | 2021</h1></a>
         </div>
 </div>
       

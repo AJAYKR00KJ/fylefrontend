@@ -62,7 +62,7 @@ export default class App extends React.Component {
         .get( 
            "https://cors-anywhere.herokuapp.com/http://fyleapis.herokuapp.com/api/branches/?q="+
            dropDownValue.value+
-           "&limit=400&offset=0" 
+           "&limit=800&offset=0" 
         )
         .then(res => {
           
@@ -92,7 +92,8 @@ export default class App extends React.Component {
       onSelect: onRowSelect,
       onSelectAll: onSelectAll,
       selected: JSON.parse(sessionStorage.getItem(key)),
-      bgColor: "#FF9933"
+      bgColor: "#FF9933",
+      fontWeight: 'bold'
     };
 
     const table = (
@@ -162,7 +163,7 @@ export default class App extends React.Component {
       <div>
       <div className="hdr row">
         <div style={{ backgroundColor: "black"}} className="col-sm-12 btn btn-info">
-          <h1 style={{ padding: "10px 20px", textAlign: "center", color: "white"}}> Fyle Bank Search Application </h1>
+          <h1 style={{ fontSize:"15px", padding: "10px 10px", textAlign: "center", color: "white"}}> Fyle Bank Search Application </h1>
         </div>
         <br/><br/><br/>
         <div style={{ backgroundColor: "#1b995a", width: "300px"}}>
